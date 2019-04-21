@@ -55,6 +55,6 @@ app.post('/form-two', urlencodedParser, function(req, res){
   res.end('Hello Wrld me\n');
 });
 
-app.listen(3000, function(){
+app.listen((process.env.PORT || 3000), function(){
 	console.log('Server running on port 3000')
-})
+});
