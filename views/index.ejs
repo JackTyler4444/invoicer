@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<h1>Invoice Issuer and Payment Checker</h1>
+<p>Enter Password and hit submit to recive your invoice (Warning: you will not be able to access your output data without your password even if you have paid for it!)</p>
+
+<form id="form" method="POST" action="/form-one">
+	<label for="password">Password:</label>
+	<input type="text" name="password">
+	<input type="submit" value="submit"/>
+</form>
+
+<h1></h1>
+<p>Enter your (paid) invoice id and your password to recive your data:</p>
+
+<form id="form-two" method="POST" action="/form-two">
+	<label for="invoice">Invoice Id:</label>
+	<input type="text" name="invoice">
+	<label for="password">Password:</label>
+	<input type="text" name="password">
+	<input type="submit" value="submit"/>
+</form>
